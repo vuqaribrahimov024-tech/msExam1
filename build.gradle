@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+group = 'az.ingress'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 17
+    options.encoding = 'UTF-8'
+}
